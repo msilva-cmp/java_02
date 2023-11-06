@@ -9,23 +9,23 @@ public class Funciones
         Operacion op = (num1, num2) -> num1+num2;
         int sum = Calcular(a, b, op);
         System.out.println("La suma es: " + sum);
-        linea();
+        linea(30);
         op = (num1, num2) -> num1-num2;
         int res = Calcular(a, b, op);
         System.out.println("La resta es: " + res);
-        linea();
+        linea(30);
         op = (num1, num2) -> num1*num2;
         int prod = Calcular(a, b, op);
         System.out.println("El producto es: " + prod);
-        linea();
+        linea(30);
         op = (num1, num2) -> num1/num2;
         int div = Calcular(a, b, op);
         System.out.println("La division es: " + div);
-        linea();
+        linea(30);
         op = (num1, num2) -> num1+num2;
         int prom = Calcular(a, b, op);
         System.out.println("La division es: " + prom);
-        linea();
+        linea(30);
         
     }
     
@@ -40,7 +40,11 @@ public class Funciones
         return op.operar(a, b);
     }
     
-    static void linea()
-    { System.out.println("*******************"); }
+    static void linea(int vueltas)
+    {
+        for(int i=0; i<vueltas; i++)
+            System.out.print("*");
+        System.out.println("");
+    }
 }
 
